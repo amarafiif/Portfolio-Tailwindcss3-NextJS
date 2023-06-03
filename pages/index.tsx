@@ -4,7 +4,7 @@ import {AiFillInstagram,
         AiFillLinkedin, 
         AiFillYoutube} from 'react-icons/ai';
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png';
+// import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
@@ -52,7 +52,7 @@ export default function Home() {
           <div className='flex justify-center gap-12 text-2xl text-indigo-500'>
             <a href='https://www.instagram.com/amarafiif' target='_blank'><AiFillInstagram /></a>
             <a href='https://www.linkedin.com/in/muhammad-ammar-afif-2b9741218/' target='_blank'><AiFillLinkedin/></a>  
-            <AiFillYoutube />
+            <a href="https://youtube.com/@muhammadammar4708" target='_blank'><AiFillYoutube /></a>
           </div>
 
           <div className='relative mx-auto mt-10 bg-gradient-to-r from-cyan-500 to-indigo-500 w-60 h-60 rounded-full overflow-hidden md:h-80 md:w-80'>
@@ -110,24 +110,26 @@ export default function Home() {
 
             <p className='text-md py-2 leading-7 text text-gray-400 font-Kanit md:text-lg max-w-lg text-center dark:text-gray-300 mx-auto'>I offer from a wide range of services, including brand design, programming and teaching.</p>
           </div>
-          <div>
-            <Image src={web1} alt={'image-web1'}/>
-          </div>
-          <div>
-            <Image src={web2} alt={'image-web2'}/>
-          </div>
-          <div>
-            <Image src={web3} alt={'image-web3'}/>
-          </div>
-          <div>
-            <Image src={web4} alt={'image-web4'}/>
-          </div>
-          <div>
-            <Image src={web5} alt={'image-web5'}/>
-          </div>
-          <div>
-            <Image src={web6} alt={'image-web6'}/>
-          </div>
+            <div className="grid grid-cols-2 gap-6 pb-20">
+              <div className=''>
+                <Image src={web1} alt={'image-web1'}/>
+              </div>
+              <div>
+                <Image src={web2} alt={'image-web2'}/>
+              </div>
+              <div>
+                <Image src={web3} alt={'image-web3'}/>
+              </div>
+              <div>
+                <Image src={web4} alt={'image-web4'}/>
+              </div>
+              <div>
+                <Image src={web5} alt={'image-web5'}/>
+              </div>
+              <div>
+                <Image src={web6} alt={'image-web6'}/>
+              </div>  
+            </div>
         </section>
       </main>
 
