@@ -14,6 +14,7 @@ import web3 from '../public/web1.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
+import profile from '../public/profile-avatar.png';
 import { useState } from 'react';
 
 export default function Home() {
@@ -40,12 +41,14 @@ export default function Home() {
             </ul>
           </nav>
 
+          {/* Title - Subtitle - Description */}
           <div className='p-8 text-center'>
             <h2 className='text-4xl font-bold py-2 font-Kanit text-indigo-500 md:text-5xl'>Muhammad Ammar Afif</h2>
             <h3 className='text-lg font-medium text-gray-800 font-Kanit md:text-2xl dark:text-gray-300'>Koordinator Computer Network.</h3>
             <p className='text-md font-normal py-4 leading-8 font-Kanit text-gray-600 md:text-xl max-w-lg dark:text-gray-400 mx-auto'>Freelance providing services for programming and design design your website. Join me down below and let's get cracking!.</p>
           </div>
 
+          {/* Social icon */}
           <div className='flex justify-center gap-12 text-2xl text-indigo-500'>
             <a href='https://www.instagram.com/amarafiif' target='_blank'><AiFillInstagram /></a>
             <a href='https://www.linkedin.com/in/muhammad-ammar-afif-2b9741218/' target='_blank'><AiFillLinkedin/></a>  
@@ -53,7 +56,7 @@ export default function Home() {
           </div>
 
           <div className='relative mx-auto mt-10 bg-gradient-to-r from-cyan-500 to-indigo-500 w-60 h-60 rounded-full overflow-hidden md:h-80 md:w-80'>
-            <Image src={deved} layout='fill' objectFit='cover' alt={'Avatar'} />
+            <Image src={profile} layout='fill' objectFit='cover' alt={'Avatar'} />
           </div>
         </section>
 
