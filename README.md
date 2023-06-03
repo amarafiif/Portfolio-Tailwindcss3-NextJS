@@ -1,3 +1,11 @@
+# Prologue
+This is a website portfolio project that I created using the Next JS framework and styling from TailwindCSS3 😎
+I learned to make this through youtube videos 😅
+You can clone this repository 😁
+
+### Thankss
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
