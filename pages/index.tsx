@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, 
+import {AiFillInstagram, 
         AiFillLinkedin, 
         AiFillYoutube} from 'react-icons/ai';
 import Image from 'next/image';
@@ -47,8 +47,8 @@ export default function Home() {
           </div>
 
           <div className='flex justify-center gap-12 text-2xl text-indigo-500'>
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
+            <a href='https://www.instagram.com/amarafiif' target='_blank'><AiFillInstagram /></a>
+            <a href='https://www.linkedin.com/in/muhammad-ammar-afif-2b9741218/' target='_blank'><AiFillLinkedin/></a>  
             <AiFillYoutube />
           </div>
 
