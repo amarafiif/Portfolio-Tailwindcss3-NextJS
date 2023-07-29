@@ -4,17 +4,16 @@ import {AiFillInstagram,
         AiFillLinkedin, 
         AiFillYoutube} from 'react-icons/ai';
 import Image from 'next/image';
-// import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web1.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import profile from '../public/profile-avatar.png';
+import project1 from '../public/bengkellineProject.png';
 import { useState } from 'react';
 
 export default function Home() {
@@ -110,24 +109,24 @@ export default function Home() {
 
             <p className='text-md py-2 leading-7 text text-gray-400 font-Kanit md:text-lg max-w-lg text-center dark:text-gray-300 mx-auto'>I offer from a wide range of services, including brand design, programming and teaching.</p>
           </div>
-            <div className="grid grid-cols-2 gap-6 pb-20">
-              <div className=''>
-                <Image src={web1} alt={'image-web1'}/>
+            <div className="grid md:grid-cols-2 gap-6 pb-20">
+              <div>
+                <a href="/project1"><Image src={project1} className='transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 rounded-xl' alt={'image-bengkelline-project'}/></a>
               </div>
               <div>
-                <Image src={web2} alt={'image-web2'}/>
+                <a href="/project2"><Image src={web2} className='transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 rounded-xl' alt={'image-web2'}/></a>
               </div>
               <div>
                 <Image src={web3} alt={'image-web3'}/>
               </div>
               <div>
-                <Image src={web4} alt={'image-web4'}/>
+                <Image className='max-h-[320px]' src={web4} alt={'image-web4'}/>
               </div>
               <div>
-                <Image src={web5} alt={'image-web5'}/>
+                <Image className='max-h-[320px]' src={web5} alt={'image-web5'}/>
               </div>
               <div>
-                <Image src={web6} alt={'image-web6'}/>
+                <Image className='max-h-[300px]' src={web6} alt={'image-web6'}/>
               </div>  
             </div>
         </section>
