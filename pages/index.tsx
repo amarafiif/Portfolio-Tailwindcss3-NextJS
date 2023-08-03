@@ -18,7 +18,7 @@ import project1 from '../public/bengkellineProject.png';
 import { useState } from 'react';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -65,45 +65,45 @@ export default function Home() {
           </div>
         </section>
 
+          {/* Services Section */}
         <section>
-          {/* Services */}
+          {/* Title, Subtitle */}
           <div>
             <h3 className='text-3xl py-1 mt-8 font-Kanit font-bold text-gray-800 md:text-2xl dark:text-gray-300 text-center'>Service I Offer</h3>
-            
-            <p className='text-md py-2 leading-7 text-gray-500 font-Kanit md:text-xl max-w-lg text-center dark:text-gray-400 mx-auto'>Since the beginning my journey as a freel developer, I've done remote work for <span className='text-indigo-500'>agercies</span> consulted for <span className='text-indigo-500'>startups </span>and collaborated with talented people to create digital products for both business and consumer use.</p>
-            
+            <p className='text-md py-2 leading-7 text-gray-500 font-Kanit md:text-xl max-w-lg text-center dark:text-gray-400 mx-auto'>I have some skills and experience as a freelance and internship in web design and web programming. I am also used to working both independently and as a team.</p>
             <p className='text-md py-2 leading-7 text text-gray-400 font-Kanit md:text-lg max-w-lg text-center dark:text-gray-300 mx-auto'>I offer from a wide range of services, including brand design, programming and teaching.</p>
           </div>
 
+          {/* Card ability */}
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
+            <div className='text-center lg:w-1/3 shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
               <Image className='mx-auto' src={design} width={100} height={100} alt={'design'}/>
-              <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Beatiful Design</h3>
-              <p className='text-gray-500 font-Kanit py-2'>Creating elegant design suited for your needs following core design theory.</p>
+              <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Web Design</h3>
+              <p className='text-gray-500 font-Kanit py-2'>Creating elegant web design suited for your needs following core design theory.</p><br></br>
               <h4 className='text-indigo-600 font-Kanit py-4'>Design tools I use</h4>
               <p className='text-gray-500 py-1 font-Kanit'>Photoshop</p>
               <p className='text-gray-500 py-1 font-Kanit'>Canva</p>
               <p className='text-gray-500 py-1 font-Kanit'>Figma</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
+            <div className='text-center lg:w-1/3 shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
               <Image className='mx-auto' src={code} width={100} height={100} alt={'design'}/>
-              <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Beatiful Design</h3>
-              <p className='text-gray-500 font-Kanit py-2'>Creating elegant design suited for your needs following core design theory.</p>
-              <h4 className='text-indigo-600 font-Kanit py-4'>Design tools I use</h4>
-              <p className='text-gray-500 py-1 font-Kanit'>Photoshop</p>
-              <p className='text-gray-500 py-1 font-Kanit'>Canva</p>
-              <p className='text-gray-500 py-1 font-Kanit'>Figma</p>
+              <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Web Programming</h3>
+              <p className='text-gray-500 font-Kanit py-2'>Creating a web-based application that suited your needs following the core programming theory.</p>
+              <h4 className='text-indigo-600 font-Kanit py-4'>Framework that I use</h4>
+              <p className='text-gray-500 py-1 font-Kanit'>Laravel</p>
+              <p className='text-gray-500 py-1 font-Kanit'>NodeJS</p>
+              <p className='text-gray-500 py-1 font-Kanit'>TailwindCSS</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
+            <div className='text-center lg:w-1/3 shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
               <Image className='mx-auto' src={consulting} width={100} height={100} alt={'design'}/>
-              <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Beatiful Design</h3>
-              <p className='text-gray-500 font-Kanit py-2'>Creating elegant design suited for your needs following core design theory.</p>
-              <h4 className='text-indigo-600 font-Kanit py-4'>Design tools I use</h4>
-              <p className='text-gray-500 py-1 font-Kanit'>Photoshop</p>
-              <p className='text-gray-500 py-1 font-Kanit'>Canva</p>
-              <p className='text-gray-500 py-1 font-Kanit'>Figma</p>
+              <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Soft Skills</h3>
+              <p className='text-gray-500 font-Kanit py-2'>Learned various soft skills from the training and helped me to work independently or as a team.</p>
+              <h4 className='text-indigo-600 font-Kanit py-4'>Skill i use</h4>
+              <p className='text-gray-500 py-1 font-Kanit'>Problem Solving</p>
+              <p className='text-gray-500 py-1 font-Kanit'>Leadership</p>
+              <p className='text-gray-500 py-1 font-Kanit'>Team Work</p>
             </div>
           </div>
         </section>
