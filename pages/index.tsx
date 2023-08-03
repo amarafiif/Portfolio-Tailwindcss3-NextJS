@@ -79,7 +79,7 @@ export default function Home() {
             <div className='text-center lg:w-1/3 shadow-lg p-10 my-10 rounded-2xl dark:bg-slate-300'>
               <Image className='mx-auto' src={design} width={100} height={100} alt={'design'}/>
               <h3 className='pt-8 pb-2 font-bold text-gray-700 text-lg font-Kanit'>Web Design</h3>
-              <p className='text-gray-500 font-Kanit py-2'>Creating elegant web design suited for your needs following core design theory.</p><br></br>
+              <p className='text-gray-500 font-Kanit py-2'>Creating elegant web design suited for your needs following core design theory.</p>
               <h4 className='text-indigo-600 font-Kanit py-4'>Design tools I use</h4>
               <p className='text-gray-500 py-1 font-Kanit'>Photoshop</p>
               <p className='text-gray-500 py-1 font-Kanit'>Canva</p>
