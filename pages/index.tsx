@@ -16,6 +16,7 @@ import web6 from '../public/web6.png';
 import profile from '../public/profile-avatar.png';
 import project1 from '../public/bengkellineProject.png';
 import { useState } from 'react';
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -47,7 +48,15 @@ export default function Home() {
           {/* Title - Subtitle - Description */}
           <div className='p-8 text-center'>
             <h2 className='text-4xl font-bold py-2 font-Kanit text-indigo-500 md:text-5xl'>Muhammad Ammar Afif</h2>
-            <h3 className='text-sm font-medium text-gray-800 font-Kanit md:text-2xl dark:text-gray-300'>Backend Web Developer</h3>
+            <h3 className='text-sm font-medium text-gray-800 font-Kanit md:text-2xl dark:text-gray-300'>
+            <Typewriter
+              options={{
+                strings: ['Backend Web Developer'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            </h3>
             <p className='text-md font-normal py-4 leading-8 font-Kanit text-gray-600 md:text-xl max-w-2xl dark:text-gray-400 mx-auto'>I am an undergraduate student in Informatics who likes to study website programming and web design. I have worked on UI/UX projects and web development several times as a freelance. I really hope I can work with you.</p>
           </div>
 
@@ -141,7 +150,7 @@ export default function Home() {
 
       <footer>
         <div className='bg-indigo-500 p-10'>
-          <h3 className='text-white font-Kanit text-center'>Muhammad Ammar Afif ❤️</h3>
+          <h3 className='text-white font-Kanit text-center'>Made with<span className='font-bold'> pleasure </span>by Muhammad Ammar Afif ❤️</h3>
         </div>
       </footer>
     </div>
